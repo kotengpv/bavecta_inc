@@ -4,7 +4,7 @@
 
 :root {
   --purple-accent: #9B5DE5;
-  --bg-light: #FAFAFF;
+  --bg-light: #d6d0dd;
   --bg-dark: #1A1A1A;
   --text-dark: #1A1A1A;
   --text-light: #FAFAFF;
@@ -20,12 +20,29 @@ p {
   margin-bottom: 1rem; /* spacing between paragraphs */
 }
 
+iframe{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.emphazize{
+    color: var(--purple-accent);
+    font-family: "Bebas Neue", Impact, sans-serif;
+    font-size: 2.3rem;
+}
+
 .englarge{
     transition: transform 0.3s ease;
 }
 
 .englarge:hover{
     transform: scale(1.1); /* Increase size by 10% */
+}
+
+.enlarge:active {
+  transform: scale(0);
 }
 
 .purple-shift {
@@ -124,6 +141,7 @@ body{
     justify-content: center;
     padding: 4rem 2rem;
     flex-direction: column;
+    text-align: center;
 }
 
 .quote-text{
@@ -169,6 +187,7 @@ body{
     width: 700px;
     height: auto;
 }
+
 .img-cliff_gazing{
 
 }
@@ -189,6 +208,7 @@ body{
     font-size: 4rem;
     font-weight: 900;
     font-family: "Bebas Neue", Impact, sans-serif;
+    text-align: center;
 }
 
 .motto-text{
@@ -206,12 +226,14 @@ body{
     align-items: center;
     justify-content: center;
     padding: 4rem 2rem;
+    
 }
 
 .about-header{
     font-size: 4rem;
     font-weight: 900;
     font-family: "Bebas Neue", Impact, sans-serif;
+    text-align: center;
 }
 
 .about-text{
@@ -307,6 +329,32 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.coe{
+    border-top: 5px solid var(--purple-accent);
+    background-color: var(--bg-light);
+    color: #1A1A1A;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+}
+
+.coe-header{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Bebas Neue", Impact, sans-serif;
+}
+
+.coe-text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .footer-nav{
     background-color: var(--bg-dark);
     color:var(--text-light);
@@ -343,6 +391,119 @@ body{
 
 .footer-nav-left{
     font-family: "Bebas Neue", Impact, sans-serif;
+}
+
+.mis_stat{
+    border-top: 5px solid var(--purple-accent);
+    background-color: var(--bg-light);
+    color: #1A1A1A;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.mis_stat-header{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Bebas Neue", Impact, sans-serif;
+}
+
+.mis_stat-text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vis{
+    border-top: 5px solid var(--purple-accent);
+    background-color: var(--bg-light);
+    color: #1A1A1A;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.vis-header{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Bebas Neue", Impact, sans-serif;
+}
+
+.vis-text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.involved{
+    border-top: 5px solid var(--purple-accent);
+    background-color: var(--bg-light);
+    color: #1A1A1A;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.involved-header{
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    text-align: center;
+}
+
+.involved-text{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.involved-button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-light);
+  background-color: var(--purple-accent); /* Deep indigo (bold but professional) */
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.involved-button:hover {
+    background-color: #6c36ad;
+  transform: translateY(-2px);
+}
+
+.involved-button:active {
+  transform: translateY(0);
+}
+
+.doc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-light);
+}
+
+.doc-container iframe {
+  width: 50%;
+  height: 100%;
+  border: none;
 }
 
 @media (max-width: 768px) {
